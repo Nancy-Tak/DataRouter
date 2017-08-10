@@ -1,0 +1,80 @@
+@borderColor: #D9D9D9;
+@bgcolor: #EFF0F3;
+@bgRowColor: #FFFFFF;
+@line-height-base: 40px;
+@row-height: 39px;
+
+.report-table {
+  border-bottom: 1px solid @borderColor;
+  font-size: 14px;
+  .ant-row {
+    background-color: @bgcolor;
+    height: @line-height-base;
+    border-left: 1px solid @borderColor;
+    border-top: 1px solid @borderColor;
+    .ant-col-4 {
+      background-color: @bgcolor;
+      overflow: hidden;
+      height: @row-height;
+      padding: 0 10px;
+      line-height: @line-height-base;
+      border-right: 1px solid @borderColor;
+    }
+    .ant-col-6 {
+      overflow: hidden;
+      height: @row-height;
+      padding: 0 10px;
+      line-height: @line-height-base;
+    }
+    .ant-col-8 {
+      overflow: hidden;
+      height: @row-height;
+      padding: 0 10px;
+      line-height: @line-height-base;
+      border-right: 1px solid @borderColor;
+      background-color: @bgRowColor;
+    }
+    .ant-col-7 {
+      overflow: hidden;
+      height: @row-height;
+      padding: 0 10px;
+      line-height: @line-height-base;
+      border-right: 1px solid @borderColor;
+    }
+    .ant-col-20 {
+      background-color: @bgRowColor;
+      overflow: hidden;
+      height: @row-height;
+      padding: 0 10px;
+      line-height: @line-height-base;
+      border-right: 1px solid @borderColor;
+    }
+  }
+}
+
+.report-table-sp {
+  font-size: 14px;
+  border-collapse: collapse;
+  border-spacing: 0px;
+  empty-cells: show;
+  border: 1px solid @borderColor;
+  background-color: @bgcolor;
+  width: 100%;
+  margin: 16px 0;
+  th {
+    font-weight: 400;
+    border: 1px solid @borderColor;
+    padding: 8px 16px;
+    text-align: left;
+    white-space: nowrap;
+  }
+  td {
+    &:first-child {
+    }
+    border: 1px solid @borderColor;
+    padding: 8px 16px;
+    text-align: left;
+    background-color: @bgRowColor;
+  }
+
+}
